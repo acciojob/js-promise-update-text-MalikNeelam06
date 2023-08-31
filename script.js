@@ -1,10 +1,9 @@
 //your JS code here. If required.
 let output=document.getElementById("output");
-async function call{
+   let prom= async function call{
 	return new promise((resolve,reject)=>{
 		resolve("Hello, world!");
-	},1000).then((data)=>{
-		return data;
-	})
+	},1000)
 }
-     output.textContent=call();
+prom.then((data)=>data);
+     output.textContent=prom;
