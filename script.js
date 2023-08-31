@@ -6,4 +6,5 @@ let output=document.getElementById("output");
 	},1000)
 }
 prom.then((data)=>data);
+call();
      output.textContent=prom;
